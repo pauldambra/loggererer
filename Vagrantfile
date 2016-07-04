@@ -39,6 +39,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.json.merge! :tz => 'Europe/London'
+    chef.json.merge! :grafana => { :listen_address => '' }
 
     chef.run_list = [
       "recipe[graphite::packages]",
