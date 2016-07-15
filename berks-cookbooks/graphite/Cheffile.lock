@@ -1,0 +1,46 @@
+SITE
+  remote: http://community.opscode.com/api/v1
+  specs:
+    apt (2.9.2)
+    build-essential (2.2.4)
+    packagecloud (0.1.1)
+    python (1.4.6)
+      build-essential (>= 0.0.0)
+      yum-epel (>= 0.0.0)
+    ubuntu (1.2.0)
+      apt (>= 0.0.0)
+    yum (3.9.0)
+    yum-epel (0.6.5)
+      yum (~> 3.2)
+
+GIT
+  remote: https://github.com/hw-cookbooks/runit.git
+  ref: master
+  sha: 994febbc29e2bb0d9d1c54662f19b65da76505a3
+  specs:
+    runit (1.7.6)
+      packagecloud (>= 0.0.0)
+
+PATH
+  remote: .
+  specs:
+    graphite (1.0.3)
+      build-essential (>= 0.0.0)
+      python (>= 0.0.0)
+      runit (~> 1.0)
+      yum-epel (>= 0.0.0)
+
+PATH
+  remote: ./example/graphite_example
+  specs:
+    graphite_example (0.1.0)
+      graphite (>= 0.0.0)
+
+DEPENDENCIES
+  apt (>= 0)
+  graphite (>= 0)
+  graphite_example (>= 0)
+  runit (>= 0)
+  ubuntu (>= 0)
+  yum (>= 0)
+
