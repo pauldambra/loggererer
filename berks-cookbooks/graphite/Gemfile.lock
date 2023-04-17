@@ -33,7 +33,7 @@ GEM
     fauxhai (2.3.0)
       net-ssh
       ohai
-    ffi (1.9.10)
+    ffi (1.15.5)
     ffi-yajl (2.2.3)
       libyajl2 (~> 1.2)
     foodcritic (5.0.0)
